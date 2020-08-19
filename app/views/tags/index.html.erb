@@ -4,7 +4,7 @@
   <% @tags.each do |tag| %>
     <li>
       <%= link_to tag.name, tag_path(tag) %>
-      <b> <%= link_to "Delete", tag_path(@tags), method: :delete, data: {confirm: "Really delete the article?"} %> </b> 
+      <b> <%= link_to "Delete", tag_path(tag), method: :delete, data: {confirm: "Really delete the article?"} %> </b> 
 
     </li>
   <% end %>
