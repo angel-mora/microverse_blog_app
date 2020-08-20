@@ -15,12 +15,17 @@ class CommentsController < ApplicationController
     end
 
     def destroy
-        @comment = Comment.find(params[:id])
+
+
+        @article = Article.find(params[:article_id])
+        @comment = @article.comments.find(params[:id])
         @comment.destroy
+        redirect_to article_path(@article)
 
-        flash.notice = "Comment by '#{comment.author_name}' destroyed."
-
-        redirect_to articles_path(@articles)
+        # @comment = Comment.find(params[:id])
+        # @comment.destroy
+        # flash.notice = "Comment by '#{comment.author_name}' destroyed."
+        # redirect_to articles_path(@articles)
     end
 
 end
