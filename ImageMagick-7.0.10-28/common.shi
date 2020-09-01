@@ -1,0 +1,27 @@
+# -*- shell-script -*-
+# Copyright 1999-2020 ImageMagick Studio LLC
+# Definitions of optional features and configuration values for this build.
+# Intended for use by test scripts.
+MAGICK_FEATURES='DPC HDRI Cipher OpenMP'
+top_srcdir='/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28'
+top_builddir='/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28'
+
+set -a
+COMPARE="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick compare"
+COMPOSITE="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick composite"
+CONJURE="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick conjure"
+CONVERT="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick convert"
+DISPLAY="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick display"
+IDENTIFY="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick identify"
+MAGICK="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick"
+MONTAGE="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities/magick montage"
+VALIDATE="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/tests/validate"
+DRAWTEST="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/tests/drawtest"
+WANDTEST="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/tests/wandtest"
+LD_LIBRARY_PATH="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/MagickCore/.libs:/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/MagickWand/.libs:${LD_LIBRARY_PATH}"
+MAGICK_CODER_MODULE_PATH="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/coders"
+MAGICK_CONFIGURE_PATH="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/config:/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/config"
+MAGICK_FILTER_MODULE_PATH="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/filters"
+MAGICK_FONT="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/PerlMagick/demo/Generic.ttf"
+PATH="/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/utilities:/home/user/Documents/rails/microverse_blog_app/ImageMagick-7.0.10-28/tests:${PATH}"
+set +a
